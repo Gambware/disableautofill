@@ -20,9 +20,9 @@ function plugin_version_disableactiontime() {
     return [
         'name'           => 'Disable ActionTime',
         'version'        => '1.0.0',
-        'author'         => 'Seu Nome',
+        'author'         => 'Paulo Lima',
         'license'        => 'GPLv2+',
-        'homepage'       => 'http://example.com',
+        'homepage'       => 'https://github.com/Gambware',
         'minGlpiVersion' => '10.0'  // Minimum version of GLPI required for this plugin
     ];
 }
