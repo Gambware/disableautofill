@@ -8,9 +8,9 @@ function plugin_init_disableactiontime() {
 
     $PLUGIN_HOOKS['csrf_compliant']['disableactiontime'] = true;
     
-    if (strpos($_SERVER['REQUEST_URI'], 'ticket') !== false) {
+   
         $PLUGIN_HOOKS['add_javascript']['disableactiontime'][] = 'scripts/hideactiontime.js';
-    }
+    
 }
 
 /**
