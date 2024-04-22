@@ -1,0 +1,9 @@
+<plugin>
+    <license>GPLv2+</license>
+    <name>Disable ActionTime</name>
+    <version>1.0.0</version>
+    <author>Seu Nome</author>
+    <homepage>http://example.com</homepage>
+    <minGlpiVersion>10.0</minGlpiVersion>
+</plugin>
+
