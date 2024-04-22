@@ -1,7 +1,7 @@
 <plugin>
     <license>GPLv2+</license>
     <name>Disable ActionTime</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <author>Paulo Lima</author>
     <homepage>https://github.com/Gambware</homepage>
     <minGlpiVersion>10.0</minGlpiVersion>
