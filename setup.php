@@ -19,7 +19,7 @@ function plugin_init_disableactiontime() {
 function plugin_version_disableactiontime() {
     return [
         'name'           => 'Disable ActionTime',
-        'version'        => '1.0.0',
+        'version'        => '1.0.1',
         'author'         => 'Paulo Lima',
         'license'        => 'GPLv2+',
         'homepage'       => 'https://github.com/Gambware',
