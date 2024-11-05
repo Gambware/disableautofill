@@ -1,25 +1,25 @@
 <?php
 
 /**
- * Initialization function for the 'disableactiontime' plugin
+ * Initialization function for the 'disableautofill' plugin
  */
-function plugin_init_disableactiontime() {
+function plugin_init_disableautofill() {
     global $PLUGIN_HOOKS;
 
-    $PLUGIN_HOOKS['csrf_compliant']['disableactiontime'] = true;
+    $PLUGIN_HOOKS['csrf_compliant']['disableautofill'] = true;
     
    
-        $PLUGIN_HOOKS['add_javascript']['disableactiontime'][] = 'scripts/hideactiontime.js';
+        $PLUGIN_HOOKS['add_javascript']['disableautofill'][] = 'scripts/disableautofill.js';
     
 }
 
 /**
  * Plugin version and information
  */
-function plugin_version_disableactiontime() {
+function plugin_version_disableautofill() {
     return [
-        'name'           => 'Disable ActionTime',
-        'version'        => '1.0.1',
+        'name'           => 'Disable AutoFill',
+        'version'        => '1.0.0',
         'author'         => 'Paulo Lima',
         'license'        => 'GPLv2+',
         'homepage'       => 'https://github.com/Gambware',
@@ -30,7 +30,7 @@ function plugin_version_disableactiontime() {
 /**
  * Check prerequisites before installing the plugin
  */
-function plugin_disableactiontime_check_prerequisites() {
+function plugin_disableautofill_check_prerequisites() {
     if (version_compare(GLPI_VERSION, '10.0', '<')) {
         echo "Este plugin requer GLPI versão 10.0 ou superior";
         return false;
@@ -41,7 +41,7 @@ function plugin_disableactiontime_check_prerequisites() {
 /**
  * Installation function for the plugin
  */
-function plugin_disableactiontime_install() {
+function plugin_disableautofill_install() {
     // Aqui você pode adicionar lógica para configurar seu plugin durante a instalação,
     // como configurar tabelas de banco de dados ou configurações iniciais.
 
@@ -51,7 +51,7 @@ function plugin_disableactiontime_install() {
 /**
  * Uninstallation function for the plugin
  */
-function plugin_disableactiontime_uninstall() {
+function plugin_disableautofill_uninstall() {
     // Aqui você pode adicionar lógica para limpar a configuração do seu plugin,
     // como remover tabelas de banco de dados ou limpar configurações.
 
@@ -61,7 +61,7 @@ function plugin_disableactiontime_uninstall() {
 /**
  * Check if the plugin can be uninstalled
  */
-function plugin_disableactiontime_check_config() {
+function plugin_disableautofill_check_config() {
     return true;
 }
 
